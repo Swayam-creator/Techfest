@@ -11,10 +11,10 @@ const ChatInterface = ({
   inputRef 
 }) => {
   return (
-    <div className="w-full max-w-3xl mt-[100px] flex flex-col h-[700px]">
+    <div className="w-full max-w-4xl mt-[100px] md:mt-20 flex flex-col h-screen md:h-[600px] lg:h-[700px] xl:h-[800px]">
       {/* Chat header */}
       <div className="bg-zinc-800 p-4 rounded-t-lg flex justify-between items-center">
-        <h2 className="text-xl font-bold">TechFest Assistant</h2>
+        <h2 className="text-lg md:text-xl lg:text-2xl font-bold">TechFest Assistant</h2>
         <button 
           onClick={() => setChatOpen(false)} 
           className="p-1 rounded-full bg-zinc-700 hover:bg-zinc-600 transition"
@@ -26,7 +26,7 @@ const ChatInterface = ({
       </div>
       
       {/* Chat messages */}
-      <div className=" mt-5 flex-grow bg-zinc-900 p-2 overflow-y-auto">
+      <div className="mt-5 flex-grow bg-zinc-900 p-2 overflow-y-auto">
         {messages.length === 0 ? (
           <div className="text-center text-gray-500 my-4">
             Ask me anything about the TechFest!
@@ -66,7 +66,7 @@ const ChatInterface = ({
           />
           <button 
             type="submit" 
-            className="ml-2 p-2 bg-blue-900 text-white rounded-full hover:bg-blue-900 transition"
+            className="ml-2 p-2 bg-blue-900 text-white rounded-full hover:bg-blue-800 transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
