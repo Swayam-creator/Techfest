@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Event from './Pages/Event';
 import Speakers from './Pages/Speakers';
 import Cart from './Pages/Cart';
+import ChatBot from './Pages/ChatBot'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/events' element={<Event />} />
         <Route path='/speakers' element={<Speakers />} />
         <Route path='/events-registred' element={<Cart />} />
+        <Route path='/chat-bot' element={<ChatBot />} />
       </Routes>
     </Router>
     </div>

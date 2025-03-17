@@ -40,6 +40,7 @@ const Navbar = () => {
           <Link to="/about" className="hover:underline cursor-pointer">About</Link>
           <Link to="/events" className="hover:underline cursor-pointer">Events</Link>
           <Link to="/speakers" className="hover:underline cursor-pointer">Speakers</Link>
+          <Link to="/chat-bot" className="hover:underline cursor-pointer">Chat-Bot</Link>
           <Link to="/events-registred" className="hover:underline cursor-pointer"><LuShoppingBag className='3-xl' /></Link>
         </motion.div>
       </div>
