@@ -7,6 +7,7 @@ import Event from './Pages/Event';
 import Speakers from './Pages/Speakers';
 import Cart from './Pages/Cart';
 import ChatBot from './Pages/ChatBot'
+import Cursor from './Components/Cursor';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Router>
     
       {/* Navbar is outside of Routes so it will be visible across all pages */}
+      <Cursor/>
       <Navbar />
       
       <Routes>
