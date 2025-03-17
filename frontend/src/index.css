@@ -33,3 +33,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
   border-radius: 10px; /* Optional: Add border radius for a rounded look */
 }
+
+*{
+  background-color: black;
+}
