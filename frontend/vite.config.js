@@ -1,9 +1,12 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
-  base:process.env.VITE_BASE_PATH || "/Techfest",
-})
+  plugins: [react()],
+  base: process.env.VITE_BASE_PATH || "/", // Change base to "/"
+  server: {
+    host: 'localhost',
+    port: 5173,
+  },
+});
