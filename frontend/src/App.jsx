@@ -17,7 +17,6 @@ function App() {
       {/* Navbar is outside of Routes so it will be visible across all pages */}
       <Cursor/>
       <Navbar />
-      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
